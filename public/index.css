@@ -1,0 +1,57 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, td, th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  td > button {
+    width: 100%;
+    padding: 5px;
+  }
+
+#joined-container {
+    display: none;
+}
+
+#top-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#top-buttons > button {
+    margin: 0 16px;
+}
+
+#my-video-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#my-video {
+    background-color:gray;
+    height:360px; 
+    width:640px;
+}
+
+#participant-video-area {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#participant-video {
+    background-color:gray;
+    height:360px; 
+    width:640px;
+}

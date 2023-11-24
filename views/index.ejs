@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<script src="https://source.zoom.us/videosdk/zoom-video-1.9.8.min.js"></script>
+<link rel="stylesheet" href="index.css">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+<body>
+  <div id="list-container">
+    <table>
+      <tr>
+        <th>Session名</th>
+        <th>ホストとして参加</th>
+        <th>参加者として参加</th>
+      </tr>
+      <tr>
+        <td>qV2WYkjCa5</td>
+        <td><button onclick="getSigunature('qV2WYkjCa5', true)">ホスト</button></td>
+        <td><button onclick="getSigunature('qV2WYkjCa5', false)">参加者</button></td>
+      </tr>
+      <tr>
+        <td>p85kMfCsKX</td>
+        <td><button onclick="getSigunature('p85kMfCsKX', true)">ホスト</button></td>
+        <td><button onclick="getSigunature('p85kMfCsKX', false)">参加者</button></td>
+      </tr>
+      <tr>
+        <td>Pu8XZ8BzPQ</td>
+        <td><button onclick="getSigunature('Pu8XZ8BzPQ', true)">ホスト</button></td>
+        <td><button onclick="getSigunature('Pu8XZ8BzPQ', false)">参加者</button></td>
+      </tr>
+    </table>
+  </div>
+  <div id="joined-container">
+    <div id="top-buttons">
+      <button onclick="onLeave()">退出</button>
+    </div>
+    <div id="my-video-area">
+      <span>自分のカメラ</span>
+      <video id="my-video" width="640" height="360"></video>
+    </div>
+    <div id="participant-video-area">
+      <span>参加者</span>
+      <div>
+        <button onclick="previousVideo()">前の参加者</button>
+        <canvas id="participant-video" width="640" height="360"></canvas>
+        <button onclick="nextVideo()">次の参加者</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
